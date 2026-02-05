@@ -3,7 +3,7 @@ const MAX_DISTANCE_KM = 20;
 
 const state = {
   providers: [],
-  const CSV_URL: DEFAULT_CSV_URL,
+  CSV_URL: DEFAULT_CSV_URL,
   geocodeCache: new Map(),
 };
 
