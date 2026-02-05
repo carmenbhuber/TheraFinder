@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TheraFinder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="pill">TheraFinder</p>
+      <h1>Ambulante Kinder-Physio schnell finden.</h1>
+      <p class="subtitle">
+        Suche nach Ort, PLZ oder Spezialisierung – wir zeigen passende Therapieangebote in deiner Nähe.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <form id="search-form" class="search-form">
+        <div class="field-group">
+          <label for="location-input">Ort oder PLZ</label>
+          <input id="location-input" type="text" placeholder="z.B. Luzern oder 6003" autocomplete="postal-code" />
+        </div>
+        <div class="field-group">
+          <label for="specialization-input">Spezialisierung</label>
+          <input id="specialization-input" type="text" placeholder="z.B. Beckenboden" />
+        </div>
+        <button type="submit" class="primary-button">Therapie finden</button>
+      </form>
+      <div class="helper-text" id="status-text"></div>
+    </section>
+
+    <section id="admin-panel" class="card admin hidden">
+      <div class="admin-header">
+        <h2>Admin</h2>
+        <span>Nur sichtbar mit <code>?admin=1</code></span>
+      </div>
+      <div class="admin-grid">
+        <div>
+          <label for="csv-url-input">CSV-Link von SharePoint</label>
+          <input id="csv-url-input" type="url" placeholder="https://.../TheraFinder.csv" />
+        </div>
+        <div>
+          <label for="csv-file-input">Oder CSV-Datei hochladen</label>
+          <input id="csv-file-input" type="file" accept=".csv" />
+        </div>
+        <button id="load-csv-button" class="secondary-button" type="button">CSV laden</button>
+      </div>
+    </section>
+
+    <section id="results" class="results"></section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>TheraFinder · Statische SharePoint-App</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
