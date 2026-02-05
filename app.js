@@ -3,7 +3,7 @@ const MAX_DISTANCE_KM = 20;
 
 const state = {
   providers: [],
-  csvUrl: DEFAULT_CSV_URL,
+  const CSV_URL = "./TheraFinder.csv";,
   geocodeCache: new Map(),
 };
 
