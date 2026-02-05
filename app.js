@@ -1,9 +1,9 @@
-const DEFAULT_CSV_URL = "<<<HIER DEIN LINK>>>";
+const DEFAULT_CSV_URL = "./TheraFinder.csv";
 const MAX_DISTANCE_KM = 20;
 
 const state = {
   providers: [],
-  const CSV_URL = "./TheraFinder.csv";,
+  const CSV_URL: DEFAULT_CSV_URL,
   geocodeCache: new Map(),
 };
 
