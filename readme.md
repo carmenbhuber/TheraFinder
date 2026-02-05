@@ -34,3 +34,4 @@ Bei fehlender exakter Ort/PLZ-Übereinstimmung wird der eingegebene Ort/PLZ übe
 ## Google Maps
 
 Pro Treffer gibt es einen Button, der eine Route von der eingegebenen PLZ/Ort zum Therapie-Standort öffnet.
+.
